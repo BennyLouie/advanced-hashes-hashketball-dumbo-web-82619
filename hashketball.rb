@@ -221,7 +221,7 @@ def most_points_scored
       i_player.each do |name, values|
         binding.pry
         if i_player[name][:points] == points.max
-          return i_player[name]
+          return name
         end
       end
     end
