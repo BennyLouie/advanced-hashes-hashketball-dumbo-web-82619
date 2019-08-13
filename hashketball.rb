@@ -195,8 +195,10 @@ def big_shoe_rebounds
         shoes.push(i_player[name][:shoe])
       end
       big_shoe = shoes.max
-      if i_player[name][:shoe] == big_shoe
-        return i_player[name][:rebounds]
+      i_player.each do |name, values|
+        if i_player[name][:shoe] == big_shoe
+          return i_player[name][:rebounds]
+        end
       end
     end
   end
