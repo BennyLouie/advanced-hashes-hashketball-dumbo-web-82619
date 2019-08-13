@@ -241,7 +241,7 @@ points = []
       i_player.each do |name, values|
         binding.pry
         if i_player[name][:points] == points.max
-          return name
+          return stats[:team_name]
         end
       end
     end
