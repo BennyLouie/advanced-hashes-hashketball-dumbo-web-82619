@@ -147,8 +147,9 @@ def team_colors(team_name)
 end
 
 def team_names(teams)
-  game_hash[team][:team_name]
+  teams = game_hash[team][:team_name]
   binding.pry
+  teams
 end
 
 
