@@ -148,8 +148,7 @@ end
 
 def team_names(game)
   game_hash.each do |key, value|
-    binding.pry
-    return game_hash[key][:team_name]
+    game_hash[key][:team_name]
   end
 end
 
