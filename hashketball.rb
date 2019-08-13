@@ -228,13 +228,15 @@ def most_points_scored
 end
 
 def winning_team
-points = []
+brooklyn_points = []
+charlotte_points = []
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
         binding.pry
-        if 
-        points.push(i_player[name][:points])
+        if stats[:team_name] == "Brooklyn Nets"
+          brooklyn_points.push(i_player[name][:points])
+          elsif stats[:team_name] == "Charlotte 
       end
     end
   end
