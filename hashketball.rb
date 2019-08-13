@@ -167,9 +167,10 @@ def player_numbers(team)
   jersey_numbers = []
   game_hash.each do |teams, stats|
     if stats[:team_name] == team 
-      stats[:players].each do |player, stat|
-        binding.pry
-        jersey_numbers.push(stat[:number])
+      stats[:players].each do |player|
+        player.each do |name, stat|
+          binding.pry
+          jersey_numbers.push(stat[:number])
       end
     end
   end
