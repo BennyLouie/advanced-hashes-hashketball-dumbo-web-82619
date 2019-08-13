@@ -232,6 +232,7 @@ points = []
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
+        binding.pry
         points.push(i_player[name][:points])
       end
     end
