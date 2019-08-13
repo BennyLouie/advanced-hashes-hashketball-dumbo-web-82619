@@ -168,9 +168,9 @@ def player_numbers(team)
   game_hash.each do |teams, stats|
     if stats[:team_name] == team 
       stats[:players].each do |player|
-        player.each do |name, stat|
+        player.each do |name, data|
           binding.pry
-          jersey_numbers.push(stat[:number])
+          jersey_numbers.push(data[:number])
         end
       end
     end
