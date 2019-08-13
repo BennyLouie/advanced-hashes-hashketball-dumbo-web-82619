@@ -212,7 +212,7 @@ def most_points_scored
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
-        shoes.push(i_player[name][:points])
+        points.push(i_player[name][:points])
       end
     end
   end
