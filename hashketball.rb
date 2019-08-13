@@ -155,11 +155,14 @@ def team_names
 end
 
 def player_numbers(team)
-  jersey_numbers= []
+  jersey_numbers = []
   game_hash.each do |teams, stats|
     if stats[:team_name] == team 
       stats[:player].each do |player|
-        player
+        jersey_numbers.push(player[:number])
+      end
+    end
+  end
 end
 
 
