@@ -131,7 +131,6 @@ end
 def num_points_scored(player)
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
-      binding.pry
       if i_player[player]
         return i_player[player][:points]
       end
