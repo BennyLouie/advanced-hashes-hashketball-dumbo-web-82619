@@ -285,7 +285,7 @@ def long_name_steals_a_ton?
       end
     end
   end
-  longest and most steals ? 
+  longest and most steals ? true : false 
 end
 
 
