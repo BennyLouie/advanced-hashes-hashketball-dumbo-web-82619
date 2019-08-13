@@ -248,6 +248,7 @@ charlotte_points = []
     sum += p
   end
 brooklyn_points > charlotte_points ? "Brooklyn Nets" : "Charlotte Hornets"
+binding.pry
 end
 
 
