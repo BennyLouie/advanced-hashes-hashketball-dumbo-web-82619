@@ -148,6 +148,7 @@ end
 
 def team_names(teams)
   game_hash[team][:team_name]
+  binding.pry
 end
 
 
