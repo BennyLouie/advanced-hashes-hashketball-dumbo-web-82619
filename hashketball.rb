@@ -192,11 +192,16 @@ def big_shoe_rebounds
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
-        binding.pry
         shoes.push(i_player[name][:shoe])
-        # if i_player[name][:shoe] == shoes.max
-        #   return i_player[name][:rebounds]
-        # end
+      end
+    end
+  end
+  game_hash.each do |team, stats|
+    stats[:players].each do |i_player|
+      i_player.each do |name, values|
+        if i_player[name][:shoe] == shoes.max
+          return i_player[name][:rebounds]
+        end
       end
     end
   end
