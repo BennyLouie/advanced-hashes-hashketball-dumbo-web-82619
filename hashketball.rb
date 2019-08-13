@@ -163,7 +163,6 @@ def player_numbers(team)
     end
   end
   jersey_numbers
-  binding.pry
 end
 
 
