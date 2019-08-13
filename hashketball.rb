@@ -260,8 +260,10 @@ def player_with_longest_name
       end
     end
   end
-  players.max_by do |player|
+  longest_name = players.max_by do |player|
     player.length
+  end
+  longest_name
 end
 
 
