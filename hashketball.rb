@@ -233,6 +233,7 @@ points = []
     stats[:players].each do |i_player|
       i_player.each do |name, values|
         binding.pry
+        if 
         points.push(i_player[name][:points])
       end
     end
