@@ -196,6 +196,7 @@ def big_shoe_rebounds
       end
       big_shoe = shoes.max
       i_player.each do |name, values|
+        binding.pry
         if i_player[name][:shoe] == big_shoe
           return i_player[name][:rebounds]
         end
