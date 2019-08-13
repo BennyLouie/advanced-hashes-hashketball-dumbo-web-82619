@@ -121,7 +121,6 @@ end
 def num_points_scored(player)
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
-      binding.pry
       if i_player[:player_name] == player 
         return i_player[:points]
       end
@@ -141,6 +140,7 @@ end
 
 def team_colors(team_name)
   game_hash.each do |team, stats|
+    binding.pry
     if stats[:team_name] == team_name
       return stats[:colors]
     end
