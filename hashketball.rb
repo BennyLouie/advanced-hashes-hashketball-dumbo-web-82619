@@ -248,7 +248,6 @@ charlotte_points = []
     sum += p
   end
 bp > cp ? "Brooklyn Nets" : "Charlotte Hornets"
-
 end
 
 
