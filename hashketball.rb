@@ -219,7 +219,7 @@ def most_points_scored
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
-        if i_player[name][:points] == shoes.max
+        if i_player[name][:points] == points.max
           return i_player[name]
         end
       end
