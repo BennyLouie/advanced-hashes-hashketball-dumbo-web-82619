@@ -222,7 +222,7 @@ def most_points_scored
       i_player.each do |name, values|
         binding.pry
         if i_player[name][:points] == shoes.max
-          return i_player[name][:rebounds]
+          return i_player[name]
         end
       end
     end
