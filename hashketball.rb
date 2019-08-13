@@ -193,8 +193,6 @@ def big_shoe_rebounds
     stats[:players].each do |i_player|
       i_player.each do |name, values|
         shoes.push(i_player[name][:shoe])
-        shoes
-        binding.pry
       end
       big_shoe = shoes.max
       if i_player[name][:shoe] == big_shoe
