@@ -116,6 +116,7 @@ def game_hash
   }
   }
   game_hash
+  binding.pry
 end
 
 def num_points_scored(player)
@@ -144,7 +145,6 @@ def team_colors(team_name)
       return stats[:colors]
     end
   end
-  binding.pry
 end
 
 def team_names(teams)
