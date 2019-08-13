@@ -150,6 +150,7 @@ def team_names(teams)
   teams = []
   teams.push(game_hash[:home][:team_name])
   teams.push(game_hash[:away][:team_name])
+  binding.pry
   teams
 end
 
