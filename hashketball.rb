@@ -182,7 +182,7 @@ def player_stats(player)
     stats[:players].each do |i_player|
       binding.pry
       if i_player[player]
-        return i_player
+        return i_player[player]
       end
     end
   end
