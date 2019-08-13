@@ -260,7 +260,7 @@ def player_with_longest_name
       end
     end
   end
-  
+  players.max_by
 end
 
 
