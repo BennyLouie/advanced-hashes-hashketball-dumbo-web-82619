@@ -194,6 +194,8 @@ def big_shoe_rebounds
       if i_player[player]
         shoes.push(i_player[player][:shoe])
       end
+      big_shoe = shoes.max
+      if 
     end
   end
   
