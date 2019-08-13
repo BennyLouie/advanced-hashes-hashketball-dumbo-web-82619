@@ -236,21 +236,20 @@ charlotte_points = []
         binding.pry
         if stats[:team_name] == "Brooklyn Nets"
           brooklyn_points.push(i_player[name][:points])
-          elsif stats[:team_name] == "Charlotte 
-      end
-    end
-  end
-  game_hash.each do |team, stats|
-    stats[:players].each do |i_player|
-      i_player.each do |name, values|
-        if i_player[name][:points] == points.max
-          return stats[:team_name]
+          elsif stats[:team_name] == "Charlotte Hornets"
+          charlotte_points.push(i_player[name][:points])
         end
       end
     end
   end
+  brooklyn_points.reduce do |p, sum = 0|
+    sum += p
+  end
+  charlotte_points.reduce do |p, sum = 0|
+    sum += p
+  end
+brooklyn_points > charlotte_points ? "Brooklyn Nets" : "Charlotte Hornets"
 end
-
 
 
 
