@@ -158,12 +158,12 @@ def player_numbers(team)
   game_hash.each do |teams, stats|
     if stats[:team_name] == team 
       stats[:player].each do |player|
-        binding.pry
         jersey_numbers.push(player[:number])
       end
     end
   end
   jersey_numbers
+  binding.pry
 end
 
 
