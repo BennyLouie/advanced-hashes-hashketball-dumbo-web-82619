@@ -171,6 +171,7 @@ def player_numbers(team)
         player.each do |name, stat|
           binding.pry
           jersey_numbers.push(stat[:number])
+        end
       end
     end
   end
