@@ -233,7 +233,6 @@ charlotte_points = []
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
-        binding.pry
         if stats[:team_name] == "Brooklyn Nets"
           brooklyn_points.push(i_player[name][:points])
           elsif stats[:team_name] == "Charlotte Hornets"
