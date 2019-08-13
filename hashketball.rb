@@ -241,14 +241,14 @@ charlotte_points = []
       end
     end
   end
-  brooklyn_points.reduce do |p, sum = 0|
+  bp = brooklyn_points.reduce do |p, sum = 0|
     sum += p
   end
-  charlotte_points.reduce do |p, sum = 0|
+  cp = charlotte_points.reduce do |p, sum = 0|
     sum += p
   end
-brooklyn_points > charlotte_points ? "Brooklyn Nets" : "Charlotte Hornets"
-binding.pry
+bp > cp ? "Brooklyn Nets" : "Charlotte Hornets"
+
 end
 
 
