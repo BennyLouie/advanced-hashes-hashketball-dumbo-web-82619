@@ -220,7 +220,6 @@ def most_points_scored
   game_hash.each do |team, stats|
     stats[:players].each do |i_player|
       i_player.each do |name, values|
-        binding.pry
         if i_player[name][:points] == shoes.max
           return i_player[name]
         end
