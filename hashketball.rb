@@ -133,7 +133,7 @@ def num_points_scored(player)
     stats[:players].each do |i_player|
       binding.pry
       if i_player[player]
-        return i_player[:points]
+        return i_player[player][:points]
       end
     end
   end
