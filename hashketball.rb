@@ -250,7 +250,7 @@ charlotte_points = []
 bp > cp ? "Brooklyn Nets" : "Charlotte Hornets"
 end
 
-
+def player_with_longest_name
 
 
 
